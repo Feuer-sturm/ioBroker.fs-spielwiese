@@ -1,0 +1,98 @@
+{
+    "common": {
+        "name": "fs-spielwiese",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "zh-cn": "首次出版"
+            }
+        },
+        "title": "FS Spielwiese",
+        "titleLang": {
+            "en": "FS Spielwiese",
+            "de": "FS Spielwiese",
+            "ru": "ФС Шпильвизе",
+            "pt": "FS Spielwiese",
+            "nl": "FS Spielwiese",
+            "fr": "FS Spielwiese",
+            "it": "FS Spielwiese",
+            "es": "FS Spielwiese",
+            "pl": "FS Spielwiese",
+            "zh-cn": "FS 斯皮尔维斯"
+        },
+        "desc": {
+            "en": "FS Spielwiese",
+            "de": "FS Spielwiese",
+            "ru": "ФС Шпильвизе",
+            "pt": "FS Spielwiese",
+            "nl": "FS Spielwiese",
+            "fr": "FS Spielwiese",
+            "it": "FS Spielwiese",
+            "es": "FS Spielwiese",
+            "pl": "FS Spielwiese",
+            "zh-cn": "FS 斯皮尔维斯"
+        },
+        "authors": [
+            "Feuersturm <a@b.de>"
+        ],
+        "keywords": [
+            "testing"
+        ],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "main.js",
+        "icon": "fs-spielwiese.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/Feuer-sturm/ioBroker.fs-spielwiese/main/admin/fs-spielwiese.png",
+        "readme": "https://github.com/Feuer-sturm/ioBroker.fs-spielwiese/blob/main/README.md",
+        "loglevel": "info",
+        "mode": "daemon",
+        "type": "general",
+        "compact": true,
+        "connectionType": "local",
+        "dataSource": "poll",
+        "materialize": true,
+        "dependencies": [
+            {
+                "js-controller": ">=2.0.0"
+            }
+        ]
+    },
+    "native": {
+        "option1": true,
+        "option2": "42"
+    },
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "Device or service connected",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }
+    ]
+}
