@@ -13,7 +13,7 @@
 
 ## fs-spielwiese adapter for ioBroker
 
-FS Spielwiese zur Adapterentwicklung 
+FS Spielwiese zur Adapterentwicklung :-)
 
 ## Developer manual
 This section is intended for the developer. It can be deleted later
